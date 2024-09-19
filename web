@@ -1,0 +1,328 @@
+1.	Design a web page using different text formatting tags.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>different text formatting tags</title>
+</head>
+<body>
+	<hgroup>
+		<h1>heading1</h1>
+		<h2>heading2</h2>
+	</hgroup>
+	<p>the gardener poem says,...</p>
+	<blockquote>
+		silly gardener!summer goes<br>
+		and winter comes with pinching<br>
+		when in the garden bare and brown<br>
+		you must lay your barrow down<br>
+	</blockquote><br>
+	<b><i>hello friends</i></b>
+	h<sub>2</sub>so<sub>4</sub><br>
+	(a+b)<sup>2</sup>=a<sup>2</sup>+2ab+b<sup>2</sup><br>
+	h<sub>2</sub>o<br>
+	<kbd>hello</kbd><br>
+	<code>hello</code><br>
+	<samp>hello</samp><br><br>
+	<pre>hello friends how are you? I am fine and I hope you will also fine.
+	</pre><br><br>
+</body>
+</html>
+2.	Using JavaScript design, a web page that prints Addition of two numbers
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a=5;
+		var b=6;
+		var c;
+		c=a+b;
+		document.write("addition is ");
+		document.write(c);
+	</script>
+</body>
+</html>
+
+3.	Create page one.html having a link to two.html, create two.html having a link to
+three.html. Print “Welcome to Hyperlinks” in three.html.
+One.html
+<!DOCTYPE html>
+<html>
+<haed>
+	<title>One</title>
+</head>
+<body>
+	<a href="two.html">Go to Two.html</a>
+</body>
+</html>
+
+
+
+Two.html
+<!DOCTYPE html>
+<hrtml>
+<head>
+	<title>Two</title>
+</head>
+<body>
+	Welcome to two.html.
+	<br>
+	<a href="three.html">Go to three.html</a>
+</body>
+</html>
+Three.html
+<!DOCTYPE html>
+<hrtml>
+<head>
+	<title>Three</title>
+</head>
+<body>
+	Welcome to Hyperlinks.
+</body>
+</html>
+
+4.	Create an html page and demonstrate “Hyperlinking to anchor” i.e. linking within
+the same page using the concept of bookmarks/anchors.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>linking within the same file</title>
+</head>
+<body>
+<a name="top">top region</a>
+<br>
+<a href="#bottom">go to bottom</a>
+<!—add large texual content-->
+<a name="bottom">bottom region</a>
+<br>
+<a href="#top">go to top</a>
+</body>
+</html>
+5.	Using JavaScript design, a web page that prints result pass/fail based on condition
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var marks=56;
+		if(marks>40)
+		{
+			document.write("you are pass ");
+		}
+		else
+		
+		{
+			document.write("you are fail ");
+		}
+
+		
+		
+	
+	</script>
+</body>
+</html>
+
+6.	Design web page to create following table.
+
+Column1	Column 2	Column 3
+Row 1 cell 1	Row 1 cell 2	Row1 cell 3
+	Row 2 cell 2	Row 2 cell 3
+Row 3 cell 1
+	ans
+<html>
+<head>
+<title>table</title>
+</head>
+<body>
+<table border="2">
+<tr>
+<th>column 1</th>
+<th>column 2</th>
+<th>column 3</th>
+</tr>
+<tr>
+<td rowspan="2">Row 1 cell 1</td>
+<td>row 1 cell 2</td>
+<td>row 1 cell 3</td>
+</tr>
+<tr>
+<td>row 2 cell 2</td>
+<td>row 2 cell 3</td>
+</tr>
+<tr>
+<td colspan="3" align="center">Row 3 cell 1</td>
+</tr>
+</table>
+</body>
+</html>
+7.	Design a web page demonstrating all Style sheet types:
+Generate a nested list as follows: (Display Fruits and Vegetables in “red” font 
+color using inline style, Display Mango, Banana and Apple in font color “Blue” 
+and Tomato, Potato and Carrot in font color “Yellow” using internal stylesheet, 
+set background color for Fruits and Vegetables to pink using external stylesheet). Hint: use id/class attributes and/or styles for nested tags.
+▪ Fruits
+I.	Mango
+II.	Banana
+III.	Apple
+a.	Vegetables
+1 Tomato
+2. Potato
+      3 Carrot
+Main.html:
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nested lists</title>
+	<style type="text/css">
+		.fruits{color:blue}
+		.vegetables{color:yellow}
+	</style>
+	<link rel="stylesheet" type="text/css" href="one.css">
+</head>
+<body>
+	<ul >
+		<li class="bg" style="color:red">fruits</li>
+			<ol >
+				<li class="fruits">banana</li>
+				<li class="fruits">apple</li>
+				<li class="fruits">mango</li>
+			</ol>
+	</ul>
+	<ol>
+		<li class="bg" style="color:red">vegetables</li>
+			<ol >
+				<li class="vegetables">tomato</li>
+				<li class="vegetables">potato</li>
+				<li class="vegetables">carrot</li>
+			</ol>
+	</ol>
+</body>
+</html>
+One.css
+.bg
+{
+	background-color:pink
+}
+8.	Design a web page demonstrating different semantics.
+<body>
+	<header>
+		
+		<h1 align="center">The Garden Company</h1>
+		<h5 align="center">Helping your garden grow</h5>
+	</header>
+	<nav>
+	<hr>
+		<a href="one.html"><img src="home.jpg"></a>
+		<a href="lists.html"><img src="about.jpg"></a>
+		<a href="link.html"><img src="contact.jpg"></a>
+	</hr>
+	</nav>
+	<article align="center">Welcome to Home Page<br>
+	
+	We are expert in Gardening.
+	</article>
+	<footer>
+	<hr>
+	copyright &copy; 2012
+	</footer>
+</body>
+</html>
+9.design a web page to create following list.
+1.Computer Science Concepts
+	1.Data Structures
+	2.Algorithms	
+	3.Operating System
+	4.Database Management
+	5.Networking
+2.Web Technologies
+	1.HTML
+	2.CSS
+	3.JavaScript
+		1.React
+		2.Angular
+
+<html>
+<head>
+	<ol type="1">
+		<li> Computer Science Concepts</li>
+			<ol>
+				<li>.Data Structures </li>
+				<li> Algorithms </li>
+				<li> Operating System </li>
+				<li> Database Management </li>
+				<li> Networking </li>
+
+			</ol>
+		<li> Web Technologies </li>
+			<ol>
+				<li>.HTML </li>
+				<li> CSS </li>
+				<li> JAVASCRIPT </li>
+					<ol>
+						<li> React </li>
+						<li> Angular </li>
+						
+
+					</ol>
+
+
+			</ol>
+
+	</ol>
+</BODY>
+</HTML>
+
+
+		
+10.write a java script program to check if the number is odd or even.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var no=5;
+		if(no%2==0)
+		{
+			document.write("This is even number");
+		}
+		else
+		
+		{
+			document.write("This is odd number");
+		}
+
+		
+		
+		
+	</script>
+</body>
+</html>
+
+
+11. Using JavaScript design, a web page that prints subtraction of two numbers
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a=10;
+		var b=6;
+		var c;
+		c=a-b;
+		document.write("subtractionis is ");
+		document.write(c);
+	</script>
+</body>
+</html>
+
